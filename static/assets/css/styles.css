@@ -114,6 +114,15 @@ select::-webkit-input-placeholder {
 
   --base-color: var(--light-base-color);
   --base-bg-color: var(--light-base-bg-color);
+
+  --light-link-color: hsl(240, 93%, 59%);
+  --light-link-visited-color: hsl(259, 93%, 59%);
+
+  --dark-link-color: hsl(54, 93%, 59%);
+  --dark-link-visited-color: hsl(44, 93%, 59%);
+
+  --link-color: hsl(240, 93%, 59%);
+  --link-visited-color: hsl(259, 93%, 59%);
 }
 
 html,
@@ -131,20 +140,23 @@ body {
   font-size: var(--font-size-dog);
   color: var(--base-color);
   background-color: var(--base-bg-color);
-  /* --body-background-color: #{config.$bgcolor-body-light};
-  --base-color: #{config.$color-text-light};
-
-  display: flex;
-  flex-direction: column;
-  background-color: var(--body-background-color);
-  color: var(--base-color);
-  font-size: config.$font-base-size;
-
-  @include mixins.line-height(config.$font-base-size); */
 
   @media (prefers-color-scheme: dark) {
     --base-color: var(--dark-base-color);
     --base-bg-color: var(--dark-base-bg-color);
+  }
+}
+
+a {
+  color: var(--link-color);
+
+  & :visited {
+    color: var(--link-visited-color);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    --link-color: var(--dark-link-color);
+    --link-visited-color: var(--dark-link-visited-color)
   }
 }
 
