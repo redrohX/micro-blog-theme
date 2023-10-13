@@ -187,6 +187,10 @@ a {
   font-size: var(--font-size-rabbit);
 }
 
+.site-header {
+  margin-bottom: 10rem;
+}
+
 .header__nav {
   padding: 2.5rem;
 
@@ -201,4 +205,10 @@ a {
     font-family: var(--font-family-mono);
     text-align: end;
   }
+}
+
+.profile .h-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
