@@ -183,3 +183,18 @@ a {
 .f-size-xs {
   font-size: var(--font-size-rabbit);
 }
+
+.header__nav {
+  padding: 2.5rem;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    margin: 0;
+    padding: 0;
+    text-align: end;
+  }
+}
