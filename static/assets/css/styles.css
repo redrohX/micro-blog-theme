@@ -150,6 +150,8 @@ body {
 a {
   color: var(--link-color);
   text-decoration-color: hsl(197, 98%, 55%);
+  text-decoration-thickness: .08em;
+  text-underline-offset: .24em;
 
   & :visited {
     color: var(--link-visited-color);
