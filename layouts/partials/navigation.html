@@ -1,15 +1,13 @@
 <nav class="header__nav">
   <ul>
     {{ if ne .IsHome true }}
-    <li><a href="/"> <span class="arrow">←</span> Home</a></li>
+      <li><a href="/"> <span class="arrow">←</span> Home</a></li>
     {{ end }}
     {{ range .Site.Menus.main }}
     {{ if .Page.Params.redirect }}
-    <li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
+      <li><a href="{{ .Page.Params.redirect }}">{{ .Name }}</a></li>
     {{ else }}
-    <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
+      <li><a href="{{ .URL | relLangURL | safeURL }}">{{ .Name }}</a></li>
     {{ end }}
-    {{ end }}
-    {# <li><a class="cta" href="https://micro.blog/{{ .Site.Author.username }}" rel="me">Also on Micro.blog</a></li> #}
   </ul>
 </nav>
