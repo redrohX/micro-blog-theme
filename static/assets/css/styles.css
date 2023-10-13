@@ -98,6 +98,13 @@ select::-webkit-input-placeholder {
 :root {
   --font-family: system-ui, sans-serif;
   --font-family-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+  --font-size-bear: 3rem;
+  --font-size-antilope: 2.3rem;
+  --font-size-tiger: 2.0rem;
+  --font-size-dog: 1.6rem;
+  --font-size-swan: 1.5rem;
+  --font-size-cat: 1.3rem;
+  --font-size-rabbit: 1.1rem;
 }
 
 html,
@@ -129,4 +136,28 @@ body {
     --body-background-color: #{config.$bgcolor-body-dark};
     --base-color: #{config.$color-text-dark};
   } */
+}
+
+.f-size-xxl {
+  font-size: var(--font-size-bear);
+}
+
+.f-size-xl {
+  font-size: var(--font-size-antilope);
+}
+
+.f-size-lg {
+  font-size: var(--font-size-tiger);
+}
+
+.f-size-md {
+  font-size: var(--font-size-dog);
+}
+
+.f-size-sm {
+  font-size: var(--font-size-swan);
+}
+
+.f-size-xs {
+  font-size: var(--font-size-rabbit);
 }
