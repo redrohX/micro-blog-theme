@@ -105,6 +105,15 @@ select::-webkit-input-placeholder {
   --font-size-swan: 1.5rem;
   --font-size-cat: 1.3rem;
   --font-size-rabbit: 1.1rem;
+
+  --light-base-color: #373737;
+  --light-base-bg-color: #fff;
+
+  --dark-base-color: #fff;
+  --dark-base-bg-color: #373737;
+
+  --base-color: var(--light-base-color);
+  --base-bg-color: var(--light-base-bg-color);
 }
 
 html,
@@ -120,6 +129,8 @@ html {
 
 body {
   font-size: var(--font-size-dog);
+  color: var(--base-color);
+  background-color: var(--base-bg-color);
   /* --body-background-color: #{config.$bgcolor-body-light};
   --base-color: #{config.$color-text-light};
 
@@ -129,12 +140,12 @@ body {
   color: var(--base-color);
   font-size: config.$font-base-size;
 
-  @include mixins.line-height(config.$font-base-size);
+  @include mixins.line-height(config.$font-base-size); */
 
   @media (prefers-color-scheme: dark) {
-    --body-background-color: #{config.$bgcolor-body-dark};
-    --base-color: #{config.$color-text-dark};
-  } */
+    --base-color: var(--dark-base-color);
+    --base-bg-color: var(--dark-base-bg-color);
+  }
 }
 
 .f-size-xxl {
