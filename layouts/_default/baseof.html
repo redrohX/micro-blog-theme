@@ -4,9 +4,9 @@
 
 <body>
   {{ partial "header.html" . }}
-  <section {{ if eq .File.Dir "about/" }} class="bio" {{ end }}>
+  <main {{ if eq .File.Dir "about/" }} class="bio" {{ end }}>
     {{ block "main" . }}{{ end }}
-  </section>
+  </main>
   {{ partial "footer.html" . }}
   {{ partial "custom_footer.html" . }}
   {{ range .Site.Params.plugins_js }}
