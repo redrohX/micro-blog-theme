@@ -95,17 +95,25 @@ select::-webkit-input-placeholder {
   }
 }
 
+:root {
+  --font-family: system-ui, sans-serif;
+  --font-family-mono: ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+}
+
 html,
 body {
   height: 100%;
 }
 
 html {
-  /* font-family: config.$font-base-family;
-  font-size: config.$font-root-size; */
+  font-family: var(--font-family);
+  font-size: var(--font-family-mono);
+  font-size: 62,5%;
+  line-height: 1.5;
 }
 
 body {
+  font-size: 1.8rem;
   /* --body-background-color: #{config.$bgcolor-body-light};
   --base-color: #{config.$color-text-light};
 
