@@ -140,6 +140,8 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-size: var(--font-size-dog);
   color: var(--base-color);
   background-color: var(--base-bg-color);
@@ -303,7 +305,8 @@ main {
 
 .site-footer {
   max-width: 60rem;
-  margin: 0 auto;
+  margin-block-start: auto;
+  margin-inline: auto;
   padding: 2.5rem;
 
   & section {
