@@ -1,5 +1,5 @@
 {
     "params": {
-        "descripion": "Follow me on <a href=\"https://micro.blog/[USERNAME]\">@[USERNAME]Micro.blog</a> or <a href=\"https://niels.im/@social\">Mastodon</a>."
+        "description": "Follow me on <a href=\"https://micro.blog/[USERNAME]\">@[USERNAME]Micro.blog</a> or <a href=\"https://niels.im/@social\">Mastodon</a>."
     }
 }
