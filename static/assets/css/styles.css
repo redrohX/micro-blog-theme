@@ -201,6 +201,7 @@ a {
     margin: 0;
     padding: 0;
     font-family: var(--font-family-mono);
+    font-size: var(--font-size-swan);
     text-align: end;
   }
 
