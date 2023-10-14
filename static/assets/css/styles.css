@@ -254,7 +254,7 @@ main {
   list-style: none;
 
   & > li {
-    padding-block-end: 2rem;
+    padding-block-end: 4rem;
 
     &:not(:last-child) {
       border-bottom: 1px solid rgb(215, 215, 215);
