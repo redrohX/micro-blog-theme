@@ -107,22 +107,25 @@ select::-webkit-input-placeholder {
   --font-size-rabbit: 1.1rem;
 
   --light-base-color: #373737;
-  --light-base-bg-color: #fff;
-
   --dark-base-color: #fff;
-  --dark-base-bg-color: #373737;
-
   --base-color: var(--light-base-color);
+
+  --light-base-bg-color: #fff;
+  --dark-base-bg-color: #373737;
   --base-bg-color: var(--light-base-bg-color);
 
+  --light-sec-color: hsl(0, 0%, 34.9%);
+  --dark-sec-color: hsl(0, 0%, 80%);
+  --sec-color: var(--light-sec-color);
+
   --light-link-color: hsl(240, 93%, 59%);
-  --light-link-visited-color: hsl(259, 93%, 59%);
-
   --dark-link-color: hsl(54, 93%, 59%);
-  --dark-link-visited-color: hsl(44, 93%, 59%);
+  --link-color: var(--light-link-color);
 
-  --link-color: hsl(240, 93%, 59%);
-  --link-visited-color: hsl(259, 93%, 59%);
+
+  --light-link-visited-color: hsl(259, 93%, 59%);
+  --dark-link-visited-color: hsl(44, 93%, 59%);
+  --link-visited-color: var(--light-link-visited-color);
 }
 
 html,
@@ -206,6 +209,7 @@ a {
   }
 
   & a {
+    text-decoration-line: underline;
     text-decoration-color: hsl(197, 98%, 55%);
     text-decoration-thickness: .08em;
     text-underline-offset: .24em;
@@ -228,6 +232,11 @@ a {
 
   .p-role {
     font-weight: normal;
+    color: var(--sec-color);
+
+    @media (prefers-color-scheme: dark) {
+      --sec-color: var(--dark-sec-color);
+    }
   }
 }
 
