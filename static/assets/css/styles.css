@@ -149,6 +149,7 @@ body {
 
 a {
   color: var(--link-color);
+  text-decoration: none;
 
   & :visited {
     color: var(--link-visited-color);
@@ -210,10 +211,20 @@ a {
   }
 }
 
-.profile .h-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.profile {
+  .h-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .u-photo {
+    border-radius: 50%;
+  }
+
+  .p-role {
+    font-weight: normal;
+  }
 }
 
 main {
@@ -230,12 +241,14 @@ main {
   list-style: none;
 }
 
-.profile {
-  .u-photo {
-    border-radius: 50%;
-  }
+.h-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
 
-  .p-role {
-    font-weight: normal;
-  }
+.post-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
