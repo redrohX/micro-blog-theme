@@ -299,7 +299,7 @@ main {
     justify-content: center;
     gap: 2rem;
 
-    > a {
+    & a {
       font-family: var(--font-family-mono);
       font-size: var(--font-size-swan);
       text-decoration-line: underline;
