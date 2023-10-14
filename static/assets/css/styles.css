@@ -271,12 +271,34 @@ main {
   & > a {
     font-size: var(--font-size-swan);
   }
+
+  & h1 {
+    font-weight: 400;
+    text-align: center;
+    margin-block-end: 3rem;
+    font-size: var(--font-size-tiger);
+  }
 }
 
 .post-body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.e-content + .h-card {
+  margin-block: 5rem;
+  padding-block-start: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: var(--font-size-swan);
+  border-block-start: 1px solid rgb(215, 215, 215);
+
+  .u-photo {
+    border-radius: 50%;
+    max-width: 5rem;
+  }
 }
 
 .site-footer {
