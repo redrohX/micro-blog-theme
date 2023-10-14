@@ -298,5 +298,14 @@ main {
     display: flex;
     justify-content: center;
     gap: 2rem;
+
+    & > a {
+      font-family: var(--font-family-mono);
+      font-size: var(--font-size-swan);
+      text-decoration-line: underline;
+      text-decoration-color: hsl(197, 98%, 55%);
+      text-decoration-thickness: .08em;
+      text-underline-offset: .24em;
+    }
   }
 }
