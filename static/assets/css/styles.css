@@ -212,10 +212,13 @@ a {
 }
 
 .profile {
+  padding: 2.5rem;
+
   .h-card {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .u-photo {
@@ -239,6 +242,11 @@ main {
   flex-direction: column;
   gap: 2em;
   list-style: none;
+
+  & > li {
+    padding-block-end: 2rem;
+    border-bottom: 1px solid rgb(215, 215, 215);
+  }
 }
 
 .h-entry {
