@@ -189,10 +189,11 @@ a {
 }
 
 .site-header {
-  margin-bottom: 10rem;
+  margin-block-end: 6rem;
 }
 
 .header__nav {
+  margin-block-end: 2rem;
   padding: 2.5rem;
 
   & ul {

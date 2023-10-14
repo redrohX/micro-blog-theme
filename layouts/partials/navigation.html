@@ -1,7 +1,7 @@
 <nav class="header__nav">
   <ul>
     {{ if ne .IsHome true }}
-    <li><a href="/"> <span class="arrow">←</span> Home</a></li>
+    <li><a href="/"> <span aria-hidden="true" class="arrow">←</span> Home</a></li>
     {{ end }}
     {{ range .Site.Menus.main }}
     {{ if .Page.Params.redirect }}
