@@ -149,9 +149,6 @@ body {
 
 a {
   color: var(--link-color);
-  text-decoration-color: hsl(197, 98%, 55%);
-  text-decoration-thickness: .08em;
-  text-underline-offset: .24em;
 
   & :visited {
     color: var(--link-visited-color);
@@ -205,6 +202,12 @@ a {
     font-family: var(--font-family-mono);
     text-align: end;
   }
+
+  & a {
+    text-decoration-color: hsl(197, 98%, 55%);
+    text-decoration-thickness: .08em;
+    text-underline-offset: .24em;
+  }
 }
 
 .profile .h-card {
@@ -225,4 +228,14 @@ main {
   flex-direction: column;
   gap: 2em;
   list-style: none;
+}
+
+.profile {
+  .u-photo {
+    border-radius: 50%;
+  }
+
+  .p-role {
+    font-weight: normal;
+  }
 }
