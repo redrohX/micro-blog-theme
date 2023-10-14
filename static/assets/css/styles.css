@@ -255,7 +255,10 @@ main {
 
   & > li {
     padding-block-end: 2rem;
-    border-bottom: 1px solid rgb(215, 215, 215);
+
+    & :not(:last-child) {
+      border-bottom: 1px solid rgb(215, 215, 215);
+    }
   }
 }
 
