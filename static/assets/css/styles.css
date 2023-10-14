@@ -286,7 +286,7 @@ main {
   gap: 2rem;
 }
 
-.e-content + .h-card {
+.e-content ~ .h-card {
   margin-block: 5rem;
   padding-block-start: 2rem;
   display: flex;
