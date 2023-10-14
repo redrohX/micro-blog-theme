@@ -267,6 +267,10 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
+  & > a {
+    font-size: var(--font-size-swan);
+  }
 }
 
 .post-body {
