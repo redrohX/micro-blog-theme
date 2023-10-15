@@ -4,7 +4,7 @@
 	{{ with .Title }}
     <h1 class="p-name">{{ . }}</h1>
     {{ end }}
-    <h1>
+    <h1 class="f-size-md">
       <time class="dt-published" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">
         <a class="u-url" href="{{ .Permalink }}">{{ .Date.Format "2 January 2006: 15:04" }}</a>
       </time>
