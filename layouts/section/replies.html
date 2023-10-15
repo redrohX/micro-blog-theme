@@ -16,7 +16,7 @@
 		</section>
 	</div>
 
-	<ul class="post-list">
+	<ul class="replies-list">
 
 	{{ if .Site.Params.paginate_replies }}
 		{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "reply") }}
