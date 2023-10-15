@@ -249,7 +249,7 @@ main {
   padding: 2.5rem;
 }
 
-.post-list {
+.h-feed {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -265,7 +265,7 @@ main {
   }
 }
 
-:not(.h-feed) .h-entry {
+:not(.h-feed) > .h-entry {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -280,12 +280,6 @@ main {
     margin-block-end: 3rem;
     font-size: var(--font-size-tiger);
   }
-}
-
-.h-feed {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
 }
 
 .post-body {
